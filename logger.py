@@ -12,7 +12,6 @@ logging.basicConfig(
     ],
 )
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-logging.getLogger("aiohttp").setLevel(logging.WARNING)
-logging.getLogger("aiohttp.web").setLevel(logging.WARNING)
+
 
 logging = logging.getLogger()
