@@ -108,15 +108,15 @@ async def account_login(bot: Client, m: Message):
 
         links = []
 
-        if "referer" in content[0]:
-            refererx = f'--referer "{content[0].split(",")[-1]}"'
-            logging.info(refererx)
-            for i in content[1:]:
-                links.append(i.split(":", 1))
-        else:
-            for i in content:
-                links.append(i.split(":", 1))
-            refererx = 9
+#         if "referer" in content[0]:
+#             refererx = f'--referer "{content[0].split(",")[-1]}"'
+#             logging.info(refererx)
+#             for i in content[1:]:
+#                 links.append(i.split(":", 1))
+#         else:
+        for i in content:
+            links.append(i.split(":", 1))
+        refererx = 9
 
         os.remove(x)
         # print(len(links))
@@ -124,7 +124,16 @@ async def account_login(bot: Client, m: Message):
         await m.reply_text("Invalid file input.")
         os.remove(x)
         return
-
+    editable = await m.reply_text("Send referer \n Example :- htpps://www.google.com/ \n or send **no**")
+    inputx: Message = await bot.listen(editable.chat.id)
+    raw_textx = inputx.text
+    if raw_textx != "no":
+          refererx = f'--referer "{raw_textx}"'
+    else:
+          refererx = 9
+          
+    
+    
     editable = await m.reply_text(
         f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **0**"
     )
