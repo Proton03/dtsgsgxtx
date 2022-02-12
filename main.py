@@ -36,8 +36,10 @@ async def account_login(bot: Client, m: Message):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
 
     editable = await m.reply_text("Hi\nPress /pyro")
@@ -50,8 +52,10 @@ async def cancel(_, m):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
 
     editable = await m.reply_text("Canceling All process Plz wait")
@@ -68,8 +72,10 @@ async def restart_handler(_, m):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
 
     await m.reply_text("Restarted!", True)
@@ -83,8 +89,10 @@ async def account_login(bot: Client, m: Message):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
@@ -414,8 +422,10 @@ async def account_login(bot: Client, m: Message):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
 
     editable = await m.reply_text(f"**Hi im Topranker dl**")
@@ -571,8 +581,10 @@ async def adda_pdf(bot: Client, m: Message):
     txt0 = (input0.text)
     if txt0 == "a827182718271":
         pass
+        await input0.delete(True)
     else:
         await m.reply_text("Password Wrong Not For You Bye")
+        await input0.delete(True)
         return
 
     editable = await m.reply_text(f"**Hi im Pdf Adda pdf dl**")
