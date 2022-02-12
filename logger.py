@@ -2,7 +2,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 logging.basicConfig(
-    level=logging.DEBUG,
+    level=logging.ERROR,
     format=
     "%(asctime)s - %(levelname)s - %(message)s [%(filename)s:%(lineno)d]",
     datefmt="%d-%b-%y %H:%M:%S",
