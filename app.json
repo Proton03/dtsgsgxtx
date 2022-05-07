@@ -1,0 +1,137 @@
+{
+
+  "name": "Careerwill DL Bot",
+
+  "repository": "https://github.com/magneto261290/careerwillbot",
+
+  "description": "A telegram Bot for downloading videos from careerwill. Created by @The_Magneto",
+
+  "addons": [],
+
+  "env": {
+
+    "API_ID": {
+
+      "description": "TG API_ID",
+
+      "value":"9980982",
+
+      "required": true
+
+    },
+
+    "API_HASH": {
+
+      "description": "TG API HASH",
+
+      "value":"a6198445d05b755ec866c03b3358197b",
+
+      "required": true
+
+    },
+
+    "BOT_TOKEN": {
+
+      "description": "Get your bot token by talking to @Botfather",
+
+      "required": true
+
+    },
+
+    "APP_NAME": {
+
+      "description": "Heroku app name",
+
+      "required": true
+
+    },
+
+    "API_KEY": {
+
+      "description": "Heroku api key",
+
+      "required": true
+
+    },
+
+    "OWNER_ID": {
+
+      "description": "who will use this bot",
+
+      "value":"1987740452",
+
+      "required": true
+
+    },
+
+    "FR_TOKEN": {
+
+      "description": "FR_TOKEN",
+
+      "value":"f4f0e3047723385244d3aae0068d60ec09f79345",
+
+      "required": true
+
+    },
+
+    "credits": {
+
+      "description": "Give credit",
+
+      "value":"SAVE OUR WEBSITE = https://groups.careerwill.ga/",
+
+      "required": true
+
+    },
+
+    "GROUP_IDS": {
+
+      "description": "Group Ids seperated by space",
+
+      "required": true
+
+    }
+
+  },
+
+  "formation": {
+
+    "worker": {
+
+    "quantity": 1,
+
+    "size": "free"
+
+    }
+
+  },
+
+  "buildpacks": [
+
+    {
+
+      "url": "heroku/python"
+
+    },
+
+    {
+
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+
+    },
+
+    {
+
+      "url": "https://github.com/magneto261290/heroku-buildpack-rclone-mod"
+
+    },
+
+    {
+
+      "url": "https://github.com/amivin/aria2-heroku.git"
+
+    }
+
+  ]
+
+}
