@@ -145,7 +145,7 @@ async def account_login(bot: Client, m: Message):
     except:
         arg = 0
 
-    editable = await m.reply_text("**Enter Title**")
+    editable = await m.reply_text("**Enter Batch Name**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
 
@@ -154,7 +154,7 @@ async def account_login(bot: Client, m: Message):
     raw_text2 = input2.text
 
     editable4 = await m.reply_text(
-        "Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**"
+        "Now send the **Thumb url**\nEg : ```https://telegra.ph/file/7b2c6ae187bb574ab73f6.jpg```\n\nor Send **no**"
     )
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
@@ -359,10 +359,10 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n"
+                Show = f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n\n **Downloading By Bhartiya Yuva Bot**"
                 prog = await m.reply_text(Show)
-                cc = f'**Title »** {name1} {res}.mkv\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
-                cc1 = f'**Title »** {name1} {res}.pdf\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
+                cc = f'**File No. =>>** {str(count).zfill(3)}\n**VIDEO NAME =>>** {name1} {res}{aryan}.mkv\n**BATCH NAME =>>** {raw_text0}\n\n **These Files Downloaded By Aryan keep support Us**\n**For Extracting Message Here - @batchExtractor**'
+                cc1 = f'**File No. =>>** {str(count).zfill(3)}\n**VIDEO NAME =>>** {name1} {res}{aryan}.pdf\n**BATCH NAME =>>**{raw_text0}\n\n **These Files Downloaded By Aryan keep support Us**\n**For Extracting Message Here - @batchExtractor**'
                 if cmd == "pdf" or "drive" in url:
                     try:
                         ka = await helper.download(url, name)
