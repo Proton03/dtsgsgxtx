@@ -14,7 +14,7 @@
 
       "description": "TG API_ID",
 
-      "value":"9980982",
+      "value":"9576601",
 
       "required": true
 
@@ -24,7 +24,7 @@
 
       "description": "TG API HASH",
 
-      "value":"a6198445d05b755ec866c03b3358197b",
+      "value":"a9f1c1821757b62bc165ded384bad6a3",
 
       "required": true
 
@@ -58,7 +58,7 @@
 
       "description": "who will use this bot",
 
-      "value":"1987740452",
+      "value":"5119083421",
 
       "required": true
 
